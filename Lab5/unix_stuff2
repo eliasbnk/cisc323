@@ -1,0 +1,6 @@
+Although Linux supports other database systems,
+Linux has never given up the idea of working with
+flat files. Flat files are those that are based on pure
+text with regular ASCII codes. Flat files
+can be read by any operating system.
+

@@ -1,0 +1,19 @@
+#!/bin/bash
+#=======================================================
+# Script Name: phonefind
+# By: Your initials here
+# Date Today’s date
+# Purpose: Searches for a specified record in the
+# corp_phones file
+#=======================================================
+phonefile=/home/cisc32x/w1793796/FinalProject/source/corp_phones
+clear
+tput cup 5 1
+echo "Enter phone number to search for: "
+tput cup 5 35
+read number
+echo
+grep $number $phonefile | tr ':' ' '
+echo
+echo "Press ENTER to continue..."
+read continue

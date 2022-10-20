@@ -1,0 +1,14 @@
+# =======================================================
+# Script Name:   phlist1
+# By:            B.I.
+# Date:          OCTOBER 2, 2022
+# Purpose:       Use awk to format colon-separated fields
+#                in a flat file and display to the screen
+# Command Line:  phlist1
+# =======================================================
+clear
+   tput cup 2 20; echo "Corporate Phone List"
+   tput cup 3 20; echo "===================="
+   tput cup 5 0;
+   awk -F: '{printf "%-12s %-12s %s\t%s %s %10.10s %s\n", $2, $3,
+    $4, $1, $5, $6, $7}' corp_phones

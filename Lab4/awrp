@@ -1,0 +1,8 @@
+BEGIN {
+       { FS = ":"}
+       { print "\t\tVendors and Products\n" }
+       { "date" | getline d }{ printf "\t  %s\n",d }
+       { print "Vendor Name\t\t\t Product Names\n" }
+       { print"======================================\n" }
+      }
+      { printf "%-28s\t%s\n",$1, $2 }

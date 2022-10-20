@@ -1,0 +1,12 @@
+# =====================================================
+# Script Name: joinall
+# By: Your initials
+# Date: November 2009
+# Purpose: Join pnum and pnn to create a report file
+# =====================================================
+# Join the files including the unassigned programmers.
+# You do this by placing the programmer names (pnn) file,
+# first, in the join sequence.
+# =====================================================
+join -t: -a1 -j1 1 -j2 1 pnn pnum > pactrep
+

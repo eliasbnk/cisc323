@@ -1,0 +1,7 @@
+cut -f2 -d: products > p1
+cut -f3 -d: products > p2
+cut -f1 -d: vendors > v1
+cut -f2 -d: vendors > v2
+paste v1 v2 > v3
+paste p2 p1 > p3
+sort -o vrep -m v3 p3

@@ -1,0 +1,13 @@
+# =====================================================
+# Script Name: pnumname
+# By: Your initials
+# Date: November 2009
+# Purpose: Extract Programmer Numbers and Names
+# =====================================================
+cut -d: -f1-4 programmer | sort -t: -k 1 | uniq > pnn
+# The above cuts out fields 1 through 4.
+# The output is piped to a sort by programmer number.
+# The sorted output is piped to uniq to remove
+# duplicates.
+# Uniq redirects the output to pnn.
+
